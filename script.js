@@ -2,7 +2,7 @@
 
 // Дни недели
 
-let lang = 'en';
+let lang = 'ru';
 
 if (lang == 'ru') {
     console.log('понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
@@ -36,11 +36,11 @@ let dayOfWeeksMultidimensional = [
 
 let dayOfWeeks = (lang == 'ru') ? dayOfWeeksMultidimensional[0] : (lang == 'en') ?  dayOfWeeksMultidimensional[1] : 'unknown';
 
-console.log(dayOfWeeks);
+console.log(dayOfWeeks.join());
 
 // Имена
 
-let namePerson = 'Максим';
+let namePerson = 'Артем';
 
 let message = (namePerson == 'Артем') ? 'директор' : 
     (namePerson == 'Максим') ? 'преподаватель' : 
