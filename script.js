@@ -34,7 +34,7 @@ let dayOfWeeksMultidimensional = [
     ['monday, tuesday, wednesday, thursday, friday, saturday, sunday']
 ]
 
-let dayOfWeeks = (lang == 'ru') ? dayOfWeeksMultidimensional[0] : (lang == 'en') ?  dayOfWeeksMultidimensional[1] : 'unknown';
+let dayOfWeeks = (lang == 'ru') ? dayOfWeeksMultidimensional[0] : (lang == 'en') ?  dayOfWeeksMultidimensional[1] : [];
 
 console.log(dayOfWeeks.join());
 
