@@ -21,9 +21,22 @@ switch (lang) {
         console.log('Something went wrong');
 }
 
-let dayOfWeeks = {'ru': 'понедельник, вторник, среда, четверг, пятница, суббота, воскресенье', 'en': 'monday, tuesday, wednesday, thursday, friday, saturday, sunday'};
+// Дни недели через ассоциативный массив
 
-console.log(dayOfWeeks[lang]);
+let dayOfWeeksAssociative = {'ru': 'понедельник, вторник, среда, четверг, пятница, суббота, воскресенье', 'en': 'monday, tuesday, wednesday, thursday, friday, saturday, sunday'};
+
+console.log(dayOfWeeksAssociative[lang]);
+
+// Дни недели через многомерный массив
+
+let dayOfWeeksMultidimensional = [
+    ['понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'],
+    ['monday, tuesday, wednesday, thursday, friday, saturday, sunday']
+]
+
+let dayOfWeeks = (lang == 'ru') ? dayOfWeeksMultidimensional[0] : (lang == 'en') ?  dayOfWeeksMultidimensional[1] : 'unknown';
+
+console.log(dayOfWeeks);
 
 // Имена
 
